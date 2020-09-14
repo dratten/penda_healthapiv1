@@ -21,7 +21,7 @@ class AuthController extends Controller
             ]);
         }
         return response()->json([
-            'success' => False,
+            'success' => True,
             'user' => User::all()
         ]);
     }
