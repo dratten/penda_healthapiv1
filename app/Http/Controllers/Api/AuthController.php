@@ -22,7 +22,7 @@ class AuthController extends Controller
         }
         return response()->json([
             'success' => False,
-            'user' => Auth::user()
+            'user' => User::all()
         ]);
     }
 
